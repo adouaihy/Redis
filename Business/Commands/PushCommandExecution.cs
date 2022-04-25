@@ -21,7 +21,7 @@ namespace Business.Commands
             if (data == null)
                 return errorMessage;
 
-            return $"{variableName} conatins: {string.Join(" ", data)}";
+            return $"{variableName} contains: {string.Join(" ", data)}";
         }
     }
 }
