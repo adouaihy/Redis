@@ -10,6 +10,8 @@ namespace Entities
         SET = 0,
         [CommandAction("Business.Commands.GetCommandExecution, Business")]
         GET = 1,
+        [CommandAction("Business.Commands.IncrCommandExecution, Business")]
+        INCR = 2,
     }
 
     public class CommandActionAttribute : Attribute
@@ -32,6 +34,7 @@ namespace Entities
         {
             FQTN = fqtn;
         }
+
         public CommandExecution GetCommandExecution()
         {
             return Activator.CreateInstance(Type.GetType(FQTN)) as CommandExecution;

@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis", "Redis\Redis.csproj", "{FA55BF16-CF67-40B0-958E-3E71A7A46B80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Redis", "Redis\Redis.csproj", "{FA55BF16-CF67-40B0-958E-3E71A7A46B80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{EE27BEDE-1BCE-4B48-996A-C21F32C50433}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{EE27BEDE-1BCE-4B48-996A-C21F32C50433}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{51B5C553-EC14-488F-A4A1-EB7D694B8408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{51B5C553-EC14-488F-A4A1-EB7D694B8408}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csproj", "{26EFF43F-A612-4A8A-B32F-86FFD7C37A3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helper", "Helper\Helper.csproj", "{26EFF43F-A612-4A8A-B32F-86FFD7C37A3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{28C189A1-0154-459F-94E5-CE83AF176892}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{28C189A1-0154-459F-94E5-CE83AF176892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{FFD8DFE2-7BC0-4A4D-AD86-E40B187CAB31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Memory", "Data.Memory\Data.Memory.csproj", "{25395A18-ECC7-40F2-8E11-7B879A6F9383}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{28C189A1-0154-459F-94E5-CE83AF176892}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28C189A1-0154-459F-94E5-CE83AF176892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28C189A1-0154-459F-94E5-CE83AF176892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD8DFE2-7BC0-4A4D-AD86-E40B187CAB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD8DFE2-7BC0-4A4D-AD86-E40B187CAB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD8DFE2-7BC0-4A4D-AD86-E40B187CAB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD8DFE2-7BC0-4A4D-AD86-E40B187CAB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25395A18-ECC7-40F2-8E11-7B879A6F9383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25395A18-ECC7-40F2-8E11-7B879A6F9383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25395A18-ECC7-40F2-8E11-7B879A6F9383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25395A18-ECC7-40F2-8E11-7B879A6F9383}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,11 @@ namespace Business.Commands
             if (parameters.Length != 2)
                 return $"Invalid Command {command}";
 
-            return Manager.Get(parameters[1]);
+            var value = CommandExecutionManager.CurrentInstance.Get(parameters[1], out string errorMessage);
+            if (value == null)
+                return errorMessage;
+
+            return value;
         }
     }
 }

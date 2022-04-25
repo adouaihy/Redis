@@ -13,7 +13,7 @@ namespace Business.Commands
             string variableName = parameters[1];
             object variableValue = parameters[2];
 
-            Manager.Add(parameters[1], parameters[2]);
+            CommandExecutionManager.CurrentInstance.Set(variableName, variableValue);
             return $"{variableName} is set to {variableValue}";
         }
     }
