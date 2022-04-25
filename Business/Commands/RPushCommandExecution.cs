@@ -1,8 +1,9 @@
 ﻿using Entities;
+using System.Collections.Generic;
 
 namespace Business.Commands
 {
-    public class IncrCommandExecution : IncrDecrCommandExecution
+    public class RPushCommandExecution : PushCommandExecution
     {
         public override object ExecuteCommand(string command)
         {

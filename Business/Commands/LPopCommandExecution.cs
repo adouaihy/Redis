@@ -2,11 +2,11 @@
 
 namespace Business.Commands
 {
-    public class IncrCommandExecution : IncrDecrCommandExecution
+    public class LPopCommandExecution : PopCommandExecution
     {
         public override object ExecuteCommand(string command)
         {
-            return ExecuteCommand_Internal(command, true);
+            return ExecuteCommand_Internal(command, false);
         }
     }
 }

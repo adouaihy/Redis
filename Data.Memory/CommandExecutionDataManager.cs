@@ -7,17 +7,13 @@ namespace Data.Memory
     public class CommandExecutionDataManager : ICommandExecutionDataManager
     {
         static Dictionary<string, RedisData> memoryStorage = new Dictionary<string, RedisData>();
-        static Object obj = new object();
 
         public void Set(string key, RedisData data)
         {
-            lock (obj)
-            {
-                if (!memoryStorage.ContainsKey(key))
-                    memoryStorage.Add(key, data);
-                else
-                    memoryStorage[key] = data;
-            }
+            if (!memoryStorage.ContainsKey(key))
+                memoryStorage.Add(key, data);
+            else
+                memoryStorage[key] = data;
         }
 
         public RedisData Get(string key)
@@ -26,6 +22,11 @@ namespace Data.Memory
                 return data;
 
             return null;
+        }
+
+        public void Remove(string key)
+        {
+            memoryStorage.Remove(key);
         }
     }
 }

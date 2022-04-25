@@ -6,7 +6,7 @@ namespace Business.Commands
     {
         public override object ExecuteCommand(string command)
         {
-            string[] parameters = command.Split(" ");
+            string[] parameters = command.Split(" ", System.StringSplitOptions.RemoveEmptyEntries);
             if (parameters.Length != 3)
                 return $"Invalid Command {command}";
 

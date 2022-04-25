@@ -6,5 +6,6 @@ namespace Data
     {
         void Set(string key, RedisData data);
         RedisData Get(string key);
+        void Remove(string key);
     }
 }

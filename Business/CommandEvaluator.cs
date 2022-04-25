@@ -4,6 +4,8 @@ namespace Business
 {
     public class CommandEvaluator
     {
+        static object obj = new object();
+
         public object EvaluateCommand(string command)
         {
             if (string.IsNullOrEmpty(command))
@@ -15,7 +17,12 @@ namespace Business
                 return $"Invalid Command {commandToExecute}";
 
             var commandExecution = attribute.GetCommandExecution();
-            return commandExecution.ExecuteCommand(command);
+            object result;
+            lock (obj)
+            {
+                result = commandExecution.ExecuteCommand(command);
+            }
+            return result;
         }
     }
 }

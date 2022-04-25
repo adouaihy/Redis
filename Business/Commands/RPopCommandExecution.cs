@@ -2,7 +2,7 @@
 
 namespace Business.Commands
 {
-    public class IncrCommandExecution : IncrDecrCommandExecution
+    public class RPopCommandExecution : PopCommandExecution
     {
         public override object ExecuteCommand(string command)
         {

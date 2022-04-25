@@ -12,6 +12,20 @@ namespace Entities
         GET = 1,
         [CommandAction("Business.Commands.IncrCommandExecution, Business")]
         INCR = 2,
+        [CommandAction("Business.Commands.DecrCommandExecution, Business")]
+        DECR = 3,
+        [CommandAction("Business.Commands.ExpireCommandExecution, Business")]
+        EXPIRE = 4,
+        [CommandAction("Business.Commands.RPushCommandExecution, Business")]
+        RPUSH = 5,
+        [CommandAction("Business.Commands.RPopCommandExecution, Business")]
+        RPOP = 6,
+        [CommandAction("Business.Commands.LPushCommandExecution, Business")]
+        LPUSH = 7,
+        [CommandAction("Business.Commands.LPopCommandExecution, Business")]
+        LPOP = 8,
+        [CommandAction("Business.Commands.LIndexCommandExecution, Business")]
+        LINDEX = 8,
     }
 
     public class CommandActionAttribute : Attribute
