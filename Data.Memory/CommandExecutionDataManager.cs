@@ -8,6 +8,11 @@ namespace Data.Memory
     {
         static Dictionary<string, RedisData> memoryStorage = new Dictionary<string, RedisData>();
 
+        public void Flush()
+        {
+            memoryStorage.Clear();
+        }
+
         public void Set(string key, RedisData data)
         {
             if (!memoryStorage.ContainsKey(key))

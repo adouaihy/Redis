@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helper", "Helper\Helper.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{28C189A1-0154-459F-94E5-CE83AF176892}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{FFD8DFE2-7BC0-4A4D-AD86-E40B187CAB31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{FFD8DFE2-7BC0-4A4D-AD86-E40B187CAB31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Memory", "Data.Memory\Data.Memory.csproj", "{25395A18-ECC7-40F2-8E11-7B879A6F9383}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Memory", "Data.Memory\Data.Memory.csproj", "{25395A18-ECC7-40F2-8E11-7B879A6F9383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{C2398C8B-40B7-4A42-9F2A-4DD6880AF24A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{25395A18-ECC7-40F2-8E11-7B879A6F9383}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25395A18-ECC7-40F2-8E11-7B879A6F9383}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25395A18-ECC7-40F2-8E11-7B879A6F9383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2398C8B-40B7-4A42-9F2A-4DD6880AF24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2398C8B-40B7-4A42-9F2A-4DD6880AF24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2398C8B-40B7-4A42-9F2A-4DD6880AF24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2398C8B-40B7-4A42-9F2A-4DD6880AF24A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

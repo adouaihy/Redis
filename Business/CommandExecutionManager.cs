@@ -14,6 +14,12 @@ namespace Business
             CurrentInstance = new CommandExecutionManager();
         }
 
+        public void Flush()
+        {
+            ICommandExecutionDataManager commandExecutionDataManager = DataFactory.GetDataManager<ICommandExecutionDataManager>();
+            commandExecutionDataManager.Flush();
+        }
+
         public void Set(string key, object value, int? expireAfter = null)
         {
             ICommandExecutionDataManager commandExecutionDataManager = DataFactory.GetDataManager<ICommandExecutionDataManager>();
